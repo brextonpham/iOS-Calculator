@@ -9,10 +9,13 @@
 import UIKit
 
 class ViewController: UIViewController {
+    
+    
+    @IBOutlet weak var display: UILabel?
 
     @IBAction func touchDigit(sender: UIButton) {
-        let digit = sender.currentTitle
-        print("touchDigit was sent")
+        let digit = sender.currentTitle!
+        print("touchDigit was sent from \(digit)")
     }
 
 }
